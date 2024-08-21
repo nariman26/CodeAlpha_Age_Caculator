@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+ <div class="content">
+    <img src="Age-Calculator-logo.png" alt="Age Caculaator">
+    <h1>Age Calculator</h1>
+    <input type="date" id="date-input">
+    <button onclick="agecalculator(event)">Calculate</button>
+    <h3 id="result"></h3>
+</div>
+</form>
+<script>
+function agecalculator(event) {
+    event.preventDefault();  // Prevent form submission
+    let userinput = document.getElementById("date-input").value;
+
+    if (!userinput.trim()) {
+        document.getElementById("result").innerHTML = " Select a date, please!";
+        return false;
+    }
+
+    let date = new Date(userinput);
+    let diff = Date.now() - date.getTime();
+    let age_date = new Date(diff);
+    let year_date = age_date.getUTCFullYear();  // Using UTC to avoid timezone issues
+    let age = Math.abs(year_date - 1970);
+
+    document.getElementById("result").innerHTML = " Your Age is: " + age + " years";
+    return true;
+}
+</script>
+</body>
+</html>

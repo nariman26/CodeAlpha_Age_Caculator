@@ -1,0 +1,71 @@
+form
+{
+    border:darkorchid solid;
+    height:99vh;
+    position: relative;
+    background-color: #0077b6;
+}
+form .content
+{
+    border:silver solid;
+    position:absolute;
+    top:25%;
+    left:29%;
+    padding:100px;
+    background-color: #fefae0;
+    border-radius: 30px;
+    width:100vp;
+}
+form .content img
+{
+    width:3rem;
+    border-radius: 20rem;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+}
+form .content h1
+{
+    font-size: 30px;
+    margin-top: -10px;
+    text-align: center;
+    box-shadow: inset 0px -8px 40px -5px #caf0f8;
+    border-radius: 10px;
+    font-style: italic;
+   padding:10px;
+}
+form .content input
+{
+    font-size: 30px;
+    margin:10px;
+    padding:10px;
+    border-radius: 5px;  
+}
+form .content input:focus
+{
+ outline:none;
+ border: 1px solid #1ca1e8;
+}
+form .content button
+{
+    font-size: 30px;
+    margin:10px;
+    padding:10px;
+    border-radius: 5px;  
+    cursor:pointer;
+    background-color: #1ca1e8;
+    color:#fefae0;
+    transition: 0.8s;
+}
+
+form .content button:hover
+{
+ padding:10px;
+ letter-spacing: 2px;
+}
+
+#result
+{
+    font-weight: 400;
+    color:#c1121f;
+    font-size: 20px;
+}
